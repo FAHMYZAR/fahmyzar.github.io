@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="app.js" defer></script>
+
+  <title>Blank</title>
+</head>
+<body>
+
+  <!-- Cara 1 -->
+  <p>
+    Username:
+    <input type="text" value="Admin" id="textCopy">
+    <p>
+        <button type="button" id="presC">Press</button> Untuk Copy
+    </p>
+  </p>
+
+
+<script>
+  // bentar
+const copy = document.getElementById('textCopy');
+const press = document.getElementById('presC');
+
+press.addEventListener('click', () => {
+   copy.select();
+   document.execCommand("copy");
+   alert('Ok');
+})
+</script>
+</body>
